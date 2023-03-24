@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #a5a5b1;
+            display: grid;
+            place-items: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 50px;
+            color: #6f707d;
+            min-width: 600px;
+            /* font-family: 'Marcellus', serif; */
+            font-family: 'Roboto', sans-serif;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        .heading {
+            /* font-size: 55px; */
+            color: #2b304d;
+        }
+
+        .header {
+            color: #2b304d;
+            padding-bottom: 20px;
+        }
+
+        .news {
+            display: flex;
+        }
+
+        .news-headline {
+            text-decoration: none;
+            font-size: 20px;
+            color: #6f707d;
+            width: 100%;
+            text-align: justify;
+            /* /* font-weight: 600; */
+            height: fit-content;
+        }
+
+        .news-img {
+            min-height: 100px;
+            max-height: 100px;
+            width: auto;
+            border-radius: 12px;
+            margin-left: 16px;
+        }
+
+        .breakpoint {
+            border: none;
+            background: #dadce0;
+            width: 100%;
+            height: 1px;
+            margin: 14px 0 16px;
+        }
+    </style>
+
+    <script>
+        const flex_boxes = ["flex-0"]
+        window.addEventListener('hashchange', function () {
+            const url = window.location.href;
+            const flex = url.split("#")[1].toString();
+            const num = flex.match(/(\d+)/)[0] - 1;
+            const brek = "break-" + num;
+
+            if (num == 0) {
+                document.getElementsByClassName("container").item(0).scrollIntoView();
+            }
+            else {
+                document.getElementById(brek).scrollIntoView();
+            }
+            document.getElementById(flex).getElementsByTagName("div").item(0).getElementsByTagName("a").item(0).getElementsByTagName("span").item(0).style.background = "#ffd500";
+
+            const new_flex = flex_boxes[flex_boxes.length - 1]
+            console.log(new_flex);
+            if (new_flex != "flex-0") {
+                document.getElementById(flex_boxes[flex_boxes.length - 1]).getElementsByTagName("div").item(0).getElementsByTagName("a").item(0).getElementsByTagName("span").item(0).style.background = "#ffffff";
+            }
+            flex_boxes.push(flex)
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="header">
+                        <h1>News Headlines</h1>
+                    </div>
+                    <div class="news-box" id="flex-1">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/canada/british-columbia/bc-homelessness-advocates-vigilantism-1.6777970" class="news-headline"><span>People working to help B.C.'s homeless population concerned about growing vigilantism | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.6777975.1678759008!/cumulusImage/httpImage/image.jpg_gen/derivatives/16x9_620/hastings-street-tents.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-1">
+                    </div>
+                    <div class="news-box" id="flex-2">
+                        <h6>Fox News</h6>
+                        <div class="news">
+                            <a href="https://www.foxnews.com/media/washington-school-board-member-defied-mask-mandates-faces-recall-vindictive-move-progressives" class="news-headline"><span>Washington school board member who defied mask mandates faces recall: 'Vindictive move by progressives'</span></a>
+                            <figure>
+                                <img src="https://static.foxnews.com/foxnews.com/content/uploads/2023/03/Video-2023-03-13T124858.112.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-2">
+                    </div>
+                    <div class="news-box" id="flex-3">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/politics/montreal-companies-russia-us-export-restrictions-1.6769094" class="news-headline"><span>U.S. sanctioned 2 Montreal companies for supporting Russian 'war effort' | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.6706201.1673034388!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_620/destroyed-russian-tank-seen-near-a-church-in-sviatohirsk-ukraine.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-3">
+                    </div>
+                    <div class="news-box" id="flex-4">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/world/ukraine-war-day-376-1.6769126" class="news-headline"><span>Russia's Wagner group leader suggests Moscow has betrayed him | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.6769131.1678100971!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/ukraine-crisis-prigozhin.JPG" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-4">
+                    </div>
+                    <div class="news-box" id="flex-5">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/politics/ukraine-russia-canada-trainers-training-unifier-1.6755532" class="news-headline"><span>How Canada helped Ukraine learn to stop fighting wars the Soviet way | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.5991641.1618615552!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/ukraine-canada-military-drills.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-5">
+                    </div>
+                    <div class="news-box" id="flex-6">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/world/canada-leopard-tanks-ukraine-poland-russia-1.6770218" class="news-headline"><span>Inside the Canadian crash course training Ukrainians on Leopard tanks | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.6770227.1678285295!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/canadian-soldier-on-leopard-tank-in-poland.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-6">
+                    </div>
+                    <div class="news-box" id="flex-7">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/world/us-drone-russian-fighter-jet-black-sea-1.6778501" class="news-headline"><span>Russia denies its fighter jets struck U.S. drone over Black Sea | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.6778529.1678815126!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/russia-airshow.JPG" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-7">
+                    </div>
+                    <div class="news-box" id="flex-8">
+                        <h6>MSNBC</h6>
+                        <div class="news">
+                            <a href="https://www.msnbc.com/opinion/msnbc-opinion/fox-news-dominion-smartmatic-lawsuits-rcna74861" class="news-headline"><span>Fox News lawsuits from Dominion and Smartmatic could knock out the network</span></a>
+                            <figure>
+                                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2023-03/230309-fox-news-building-jm-1112-e1fc98.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-8">
+                    </div>
+                    <div class="news-box" id="flex-9">
+                        <h6>CBC News</h6>
+                        <div class="news">
+                            <a href="http://www.cbc.ca/news/world/us-drone-russia-jet-collision-explainer-1.6779350" class="news-headline"><span>What's an MQ-9 Reaper, and other questions about the U.S.-Russia collision over the Black Sea answered | CBC News</span></a>
+                            <figure>
+                                <img src="https://i.cbc.ca/1.2424335.1678890258!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_620/us-mali-the-al-qaida-papers-drones.jpg" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-9">
+                    </div>
+                    <div class="news-box" id="flex-10">
+                        <h6>Independent</h6>
+                        <div class="news">
+                            <a href="http://www.independent.co.uk/news/uk/home-news/gary-lineker-bbc-tweet-jonathan-gullis-b2301433.html" class="news-headline"><span>Gary Lineker news  latest: Match of the Day host attacks Tory MPs dangerous Nazi comments</span></a>
+                            <figure>
+                                <img src="https://static.independent.co.uk/2023/03/15/14/newFile-1.jpg?quality=75&width=1200&auto=webp" class="news-img">
+                            </figure>
+                        </div>
+                        <hr class="breakpoint" id="break-10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

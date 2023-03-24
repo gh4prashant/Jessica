@@ -1,0 +1,145 @@
+User: Who are you
+Jessica: I'm your Jessica. I can play music for you or search something for you. All you have to do is ask
+User: My tution teachers name is Ankur
+Jessica: Got it, your tuition teacher's name is Ankur. Is there anything else I can help you with?
+User: What is my tution teachers name
+Jessica: Your tuition teacher's name is Ankur.
+User: Who is my tuition teacher
+Jessica: Your tuition teacher's name is Ankur.
+User: Today, I have to study determiners tenses narration active and passive
+Jessica: Okay, I will remember that you have to study Determiners, Tenses, Narration, Active and Passive voice today.
+User: Tell me a joke
+Jessica: This might make you laugh. There's a guy in town who walks around talking to himself using only figurative language. We call him the Village Idiom. Hihihi
+User: What i have to study
+Jessica: You have to study Determiners, Tenses, Narration, Active and Passive voice today.
+Jessica: Good Evening! Today is Thursday, the 16 of February 2023, and it's currently 04:46 PM.
+User: What is my tution teachers name
+Jessica: Your tuition teacher's name is Ankur.
+User: Remind me at 8:00 p.m. to pick up groceries
+Jessica: Got it master, reminder set for 8:00 PM to pick up groceries.
+User: Goodbye
+Jessica: I'll be here Master.
+User: Who are you
+Jessica: I am an AI personal assistant created by isoftTechX, designed to assist and communicate with you to answer your questions and provide information.
+User: What is python
+Jessica: Python is a high-level, interpreted, general-purpose programming language. It was created by Guido van Rossum in 1991 and is used for web development, data science, scripting, and more. Python is known for its simple syntax and readability, making it a great language for beginners to learn.
+Jessica: Good Afternoon! It's 01:16 PM on Saturday, February 18 2023.
+User: Remind me at 1:52 p.m. to take bath
+Jessica: Got it master, reminder set for 1:52 PM to take bath.
+User: What is your name
+Jessica: My name is Jessica.
+User: Remind me at 2:12 p.m. to take bath
+Jessica: Reminder set for 2:12 PM to take bath.
+User: What is the time now
+Jessica: Master, It is 11:01 in  India now.
+User: What is the date today
+Jessica: Today is Friday, March 03 2023.
+User: Who is my tution teacher
+Jessica: Your tuition teacher's name is Ankur.
+User: Who are you
+Jessica: I am your Jessica, I'm here to help you. Let me know if you need anything.
+Jessica: Good Afternoon! Today is Friday, March 03 2023, and the current time is 02:06 PM.
+User: What's your name
+Jessica: My name is Jessica.
+Jessica: Good Afternoon! The time is 02:16 PM on Friday, March 03 2023.
+User: Open gmail
+Jessica: G-Mail is now open
+Jessica: Master, Hold on the screen I am taking a screenshot.
+Jessica: Okay! Screenshot taken and saved to your device's gallery.
+User: What is the battery percentage
+Jessica: The battery percentage is 90% and it is charging.
+User: Get to sleep
+Jessica: Good Bye Master
+User: Wake up jessica
+Jessica: I'm up and awaiting your instructions, master.
+User: Can you show me the location of london
+Jessica: Locating [London] on the map
+User: Give me directions to kanpur
+Jessica: Searching route to [Kanpur]
+User: What is taj mahal
+Jessica: The Taj Mahal is a white marble mausoleum located in Agra, India. It was built by Mughal emperor Shah Jahan in memory of his third wife, Mumtaz Mahal. The Taj Mahal is widely recognized as "the jewel of Muslim art in India
+User: What is the time in london
+Jessica: Master, It is 11:51 in  London, United Kingdom now�.
+User: What is my tution teachers name
+Jessica: Your tuition teacher's name is Ankur.
+Jessica: Good Evening! It's 07:37 PM on Friday, March 03 2023.
+User: What is the weather in akbarpur
+Jessica: The temperature is currently 33 degrees and the condition is Clear.
+User: Remind me at 2:30 p.m. to have dinner
+Jessica: Reminder set for 2:30 PM to have dinner.
+User: Where is delhi on map
+Jessica: Locating [Delhi] on the map
+User: How is the weather in california
+Jessica: The temperature is currently 8 degrees and the condition is Clear.
+Jessica: Good Evening! The time is 04:11 PM on Saturday, March 04 2023.
+User: What is the date today
+Jessica: Today is Saturday, March 04 2023.
+User: What is the time now
+Jessica: Master, It is 16:22 in India.
+User: How is the weather today
+Jessica: The temperature is currently 32 degrees and the condition is Clear.
+User: Show me kanpur on map
+Jessica: Locating [Kanpur] on the map
+User: Give me directions to kanpur
+Jessica: Help you reach Kanpur
+User: Explain the theory of relativity
+Jessica: The theory of relativity usually encompasses two interrelated physics theories by Albert Einstein; special relativity and general relativity, proposed and published in 1905 and 1915, respectively. Special relativity applies to all physical phenomena in the absence of gravity. General relativity explains the law of gravitation and its relation to the forces of nature
+Jessica: Good Evening! Today is Saturday, the 04 of March 2023, and it's currently 09:07 PM.
+User: Play heatwave song
+Jessica: Playing Glass Animals - Heat Waves (Official Video)
+User: Who are you
+Jessica: I am an AI personal assistant created by isoftTechX, designed to assist and communicate with you to answer your questions and provide information.
+Jessica: Good Morning! Today is Sunday, the 05 of March 2023, and it's currently 10:27 AM.
+User: Give me the weather forecast
+Jessica: The current weather condition is Sunny with a high of 33 degrees and a low of 18 degrees.
+User: Who is stephen hawking
+Jessica: Stephen Hawking was an English theoretical physicist, cosmologist, and author who was one of the most renowned scientists of the 20th century. He made groundbreaking contributions to the fields of cosmology, quantum gravity, and theoretical physics. He is best known for his work on black holes and his theory
+User: Wake up jessica
+Jessica: I'm up and awaiting your instructions, master.
+User: What is the date today
+Jessica: Today is Sunday, March 05 2023.
+User: What is your masters name
+Jessica: My master's name is not known to me.
+User: From now on remember your masters name is prashant
+Jessica: Got it, my master's name is Prashant. Is there anything else I can help you with?
+User: Wake up jessica
+Jessica: I'm up and awaiting your instructions, master.
+User: What is the time now
+Jessica: Master, It is 22:32 in  India now�.
+User: What is the date today
+Jessica: Today is Sunday, March 05 2023.
+User: What is the time in london
+Jessica: Master, It is 17:03 in  London, United Kingdom now�.
+User: How is the weather today in akbarpur
+Jessica: The temperature is currently 23 degrees and the condition is Clear.
+User: What is the meaning of life
+Jessica: The meaning of life is subjective and can vary from person to person. Some people believe that the purpose of life is to find happiness and fulfillment, while others believe that the purpose of life is to learn and grow. Ultimately, the meaning of life is up to each individual to decide for themselves.
+Jessica: Good Evening! Today is Thursday, March 16 2023, and the current time is 09:49 PM.
+User: What is the time in uk
+Jessica: Master, It is 16:21 in  United Kingdom now�.
+User: How is the weather today in kanpur
+Jessica: The temperature is currently 23 degrees and the condition is Mostly Cloudy.
+Jessica: Good Morning! It's 08:55 AM on Friday, March 17 2023.
+User: What is the time now
+Jessica: Master, It is 11:15 in  India now�.
+User: Play music
+Jessica: Playing Nadiyon Paar (Let the Music Play) � Roohi | Janhvi | Sachin-Jigar | Rashmeet, Shamur, IP Singh
+Jessica: Good Afternoon! The time is 12:42 PM on Friday, March 17 2023.
+User: Play music
+Jessica: Playing Nadiyon Paar (Let the Music Play) � Roohi | Janhvi | Sachin-Jigar | Rashmeet, Shamur, IP Singh
+User: What is the time now
+Jessica: Master, It is 13:57 in  India now�.Jessica: Good Afternoon! Today is Wednesday, the 22 of March 2023, and it's currently 02:59 PM.
+Jessica: Good Afternoon! Today is Wednesday, March 22 2023, and the current time is 03:01 PM.
+User: What is the time now
+Jessica: Master, It is 15:02 in  India now�.
+User: How is the weather today
+Jessica: The temperature is currently 27 degrees and the condition is Sunny.
+User: Puppy lay li color
+Jessica: I'm sorry, I don't understand. Could you please rephrase your question?
+User: Matlab
+Jessica: Matlab is a programming language and software environment for numerical computing, visualization, and data analysis. It is used in a wide range of applications, including signal processing, image processing, robotics, finance, and more.
+User: Write an email
+Jessica: Master, what would you like to say in the email?
+User: Write an email to invite my friend on my birthday
+Jessica: OK master I have written a mail with subject Invitation to my Birthday Party
+User: What should we do

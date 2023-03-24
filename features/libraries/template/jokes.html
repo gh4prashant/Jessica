@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #a5a5b1;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 50px;
+            color: #6f707d;
+            min-height: 400px;
+            width: 600px;
+            padding: 30px;
+            margin: 30px;
+            text-align: center;
+            font-family: 'Marcellus', serif;
+            position: relative;
+        }
+
+        #title {
+            font-size: 50px;
+            /* font-family: 'Orbitron'; */
+            text-align: left;
+        }
+
+        #content {
+            text-align: justify;
+            font-size: 30px;
+            white-space: pre-line;
+        }
+
+        #reference {
+            right: 50px;
+            bottom: 50px;
+            position: absolute;
+            text-align: right;
+        }
+
+        #reference>a {
+            color: #6f707d;
+            text-decoration: none;
+        }
+
+        html {
+            font-size: 14px;
+            text-size-adjust: 100%;
+            color: #3c4043;
+            word-wrap: break-word;
+            background-color: #ffff;
+        }
+
+        .breakpoint {
+            border: none;
+            background: #dadce0;
+            width: 100%;
+            height: 1px;
+            margin: 14px 0 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h1 id="title">$title</h1>
+                    <hr class="breakpoint">
+                    <article id="content">$joke</article>
+                    <div id="reference">
+                        <a href="$url" title="More jokes">www.rd.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

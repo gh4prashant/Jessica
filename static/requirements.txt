@@ -1,0 +1,26 @@
+# Modules required to run Jessica - VIII
+requests
+urllib3
+beautifulsoup4
+lxml
+PyQt5
+PyQtWebEngine
+pyttsx3
+SpeechRecognition
+PyAudio
+torch
+tensorflow
+nltk
+google-api-python-client
+PyAutoGUI
+psutil
+opencv-python
+opencv-contrib-python
+mediapipe
+pythonping
+datefinder
+gTTS
+playsound==1.2.2
+googletrans==3.1.0a0
+scikit_learn
+openai

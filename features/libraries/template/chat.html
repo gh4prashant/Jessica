@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Chat Window</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        *:hover,
+        *:focus {
+            outline: none;
+        }
+
+        .chat {
+            width: 100%;
+            max-width: 800px;
+            height: calc(100vh - 50px);
+            min-height: 100%;
+            padding: 15px 30px;
+            margin: 0 auto;
+            overflow-y: scroll;
+            background-color: #fff;
+            transform: rotate(180deg);
+            direction: rtl;
+        }
+
+        .chat__wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+        }
+
+        .chat__message {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #000;
+            background-color: #e6e7ec;
+            max-width: 600px;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            position: relative;
+            margin: 15px 0;
+            word-break: break-all;
+            transform: rotate(180deg);
+            direction: ltr;
+        }
+
+        .chat__message:after {
+            content: "";
+            width: 20px;
+            height: 12px;
+            display: block;
+            background-image: url("https://stageviewcincyshakes.firebaseapp.com/icon-gray-message.e6296433d6a72d473ed4.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            bottom: -2px;
+            left: -5px;
+        }
+
+        .chat__message-own {
+            color: #fff;
+            margin-left: auto;
+            background-color: #00a9de;
+        }
+
+        .chat__message-own:after {
+            width: 19px;
+            height: 13px;
+            left: inherit;
+            right: -5px;
+            background-image: url("https://stageviewcincyshakes.firebaseapp.com/icon-blue-message.2be55af0d98ee2864e29.png");
+        }
+
+        .chat__form {
+            background-color: #e0e0e0;
+        }
+
+        .chat__form form {
+            max-width: 800px;
+            margin: 0 auto;
+            height: 50px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .chat__form input {
+            height: 40px;
+            font-size: 16px;
+            min-width: 90%;
+            padding-left: 15px;
+            background-color: #fff;
+            border-radius: 15px;
+            border: none;
+        }
+
+        .chat__form button {
+            width: 10%;
+            height: 100%;
+            font-size: 16px;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .chat__form button:hover {
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        fetch('chat_history.txt')
+            .then(response => response.text())
+            .then(data => {
+                // do something with the file data
+                console.log(data);
+            })
+            .catch(error => console.error(error));
+
+        $(function () {
+            $('#chat__form').on('submit', function (e) {
+                e.preventDefault();
+                var message = $('#text-message').val();
+                $('#text-message').val('');
+                var date = new Date().toJSON().slice(0, 10).replace(/-/g, '/');
+                $('.chat__wrapper').append('<div class="chat__message chat__message-own"><div>' + message + '</div></div>')
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chat__wrapper">
+            <div class="chat__message">
+                <div>Message #1</div>
+            </div>
+            <div class="chat__message chat__message-own">
+                <div>Message #2</div>
+            </div>
+        </div>
+    </div>
+    <div class="chat__form">
+        <form id="chat__form">
+            <input id="text-message" type="text" placeholder="Type your message here ...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div id="result"></div>
+</body>
+
+</html>

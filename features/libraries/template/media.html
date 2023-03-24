@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #a5a5b1;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-evenly; 
+            /* margin-bottom: 3rem; */
+        }
+
+    </style>
+    <!-- <script>
+        function autoplay() {
+            var button = document.querySelectorAll('[data-testid="play-pause-button"]')
+            var a = document.querySelectorAll('[target="_blank"]')
+            console.log("A: ", a)
+            console.log("Click", button)
+            button.click()
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            autoplay()
+        })
+    </script> -->
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <iframe src="https://open.spotify.com/embed/track/3USxtqRwSYz57Ewm6wWRMp" width="400" height="80"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

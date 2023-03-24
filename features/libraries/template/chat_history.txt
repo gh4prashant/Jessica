@@ -1,0 +1,8 @@
+User: Wake up jessica
+Jessica: I'm up and awaiting your instructions, master.
+User: How is the weather today in akbarpur
+Jessica: The temperature is currently 23 degrees and the condition is Clear.
+User: Play some music
+Jessica: Playing OFFICIAL: Best Soothing Songs of Bollywood | Soothing Music
+User: What is the meaning of life
+Jessica: The meaning of life is subjective and can vary from person to person. Some people believe that the purpose of life is to find happiness and fulfillment, while others believe that the purpose of life is to learn and grow. Ultimately, the meaning of life is up to each individual to decide for themselves.

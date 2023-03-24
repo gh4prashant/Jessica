@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #a5a5b1;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 50px;
+            color: #6f707d;
+            min-height: 400px;
+            min-width: 600px;
+            padding: 30px;
+            margin: 30px;
+            text-align: center;
+            font-family: 'Marcellus', serif;
+        }
+
+        .clock {
+            font-family: 'Orbitron';
+        }
+
+        .digit {
+            font-size: 100px;
+            width: 250px;
+        }
+    
+        .sep {
+            font-size: 110px;
+            width:50px;
+            display: inline-block;
+        }
+
+        .calendar {
+            font-size: 30px;
+            color: #70757a;
+            font-weight: lighter;
+            text-align: right;
+            margin-right: 60px;
+            position: absolute;
+            bottom: 180px;
+            right: 20px;
+        }
+        
+        #location {
+            font-size: 50px;
+            text-align: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        html {
+            font-size: 14px;
+            text-size-adjust: 100%;
+            color: #3c4043;
+            word-wrap: break-word;
+            background-color: #ffff;
+        }
+
+    </style>
+    <script>
+        function refreshTime() {
+            const hourTime = document.getElementById("hour");
+            const minTime = document.getElementById("min");
+            const secTime = document.getElementById("sec");
+            
+            const new_hourTime = parseInt(hourTime.textContent)+1;
+            const new_minTime = parseInt(minTime.textContent)+1;
+            const new_secTime = parseInt(secTime.textContent)+1;
+
+            if (new_secTime < 10) {
+                const new_secTime1 = String(new_secTime);
+                secTime.textContent = 0+new_secTime1;
+            }
+
+            if (new_secTime >= 60) {
+                const new_secTime2 = "00";
+                secTime.textContent = new_secTime2;
+                if (new_minTime < 10) {
+                    const new_minTime1 = String(new_minTime);
+                    minTime.textContent = 0+new_minTime1;
+                }
+                
+                if (new_minTime >= 60) {
+                    const new_minTime2 = "00";
+                    minTime.textContent = new_minTime2;
+                    
+                    if (new_hourTime < 10) {
+                        const new_hourTime1 = String(new_hourTime);
+                        hourTime.textContent = 0+new_hourTime1;
+                    }
+                    
+                    if (new_hourTime >= 24) {
+                        const new_hourTime2 = "00";
+                        hourTime.textContent = new_hourTime2;
+                    }
+                    
+                    if (new_hourTime < 24 && new_hourTime >= 10) {
+                        hourTime.textContent = new_hourTime;
+                    }
+                }
+
+                if (new_minTime < 60 && new_minTime >= 10) {
+                    minTime.textContent = new_minTime;
+                }
+                    
+            }
+
+            if (new_secTime < 60 && new_secTime >= 10) {
+                secTime.textContent = new_secTime;
+            }
+
+        }
+        setInterval(refreshTime, 1000);
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <p id="location">%location</p>
+                    <time class="clock">
+                        <span class="digit" id="hour">%hour</span>
+                        <span class="sep">:</span>
+                        <span class="digit" id="min">%minute</span>
+                        <span class="sep">:</span>
+                        <span class="digit" id="sec">%second</span>
+                    </time>
+                    <div class="calendar">
+                        <p id="date">%date</p> 
+                        <p id="sun">Sun: %sun</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
